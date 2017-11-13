@@ -93,9 +93,15 @@
 	border-right: 100px solid transparent;
 }
 
-/*.nav-tabs>li>a:hover {
-	border-color: unset !important;
-	background-color: #dadada !important;	*/
+.carousel-inner>.item>img {
+	width: 100%;
+    object-fit: cover;
+}
+
+.tags-grid > div {
+	padding: 2px;
+	text-align: center; 
+}
 }
 
 @media (max-width: 600px) {
