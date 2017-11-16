@@ -1,3 +1,15 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
 .jumbotron {
 	background-color: #f4511e;
 	color: #ffffff;
@@ -17,11 +29,13 @@
 #searchForm {
 	position:absolute;
   	top:60%;
+  	justify-content: center;
 }
 
 .top-nav .nav {
 	position: absolute;
-	top: 30%;
+	justify-content: center;
+	top: 40%;
 	width: 100%;
 	text-align: center;
 	padding-left: unset !important;
@@ -49,6 +63,10 @@
     /*margin: 10px;*/
     /*padding: 0px 2px;*/
    
+}
+
+.btn {
+	border-radius: unset !important;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
@@ -81,7 +99,7 @@
 }
 
 .movie-title-container {
-	text-align: center;
+	text-align: left;
 }
 
 .title-rectangle {
@@ -118,17 +136,34 @@
     width: 100%;
 }
 
-.items-circular{
+.movie-products{
 	text-align: center;
+	border: 0.5px solid #eee;
+	margin-left: -5px;
+    margin-right: -5px;
 }
 
-.items-circular img {
+.thumbnail .caption {
+	padding: unset;
+}
+
+.movie-products img {
 	width: 50px;
 	margin: 0 auto;
 }
 
+.product-item {
+    padding-top: 15%;
+    text-transform: uppercase;
+    color: #f6716d;
+
+}
+
 .mt-10 {
 	margin-top: 10px;
+}
+.mt-3 {
+	margin-top: 3px;
 }
 
 /*.img-circle {
