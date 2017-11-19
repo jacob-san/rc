@@ -32,6 +32,13 @@ body {
 	width: 100% !important;
 }
 
+.top-logo {
+	position: absolute;
+    top: 6%;
+    text-align: center;
+    width: 100%;
+}
+
 #searchForm {
 	position:absolute;
   	top:60%;
@@ -260,6 +267,66 @@ body {
 
 .product-item p {
 	margin-bottom: unset !important;
+}
+
+.most-viewed {
+	padding: 0px 10px 10px;
+}
+
+.most-viewed-item {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.recently-viewed-item {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.most-viewed-item:hover .overlay-full {
+  opacity: 0.5;
+}
+
+.recently-viewed-item:hover .overlay {
+  height: 50%;
+}
+
+.shop-now-text {	
+  white-space: nowrap; 
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #313131;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlay-full {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #313131;
 }
 
 .mt-10 {
